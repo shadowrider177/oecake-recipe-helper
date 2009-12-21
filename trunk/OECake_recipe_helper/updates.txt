@@ -1,0 +1,6 @@
+﻿Ideas for future updates:
+
+Add tagging for recipes (bomb, laser, etc.)
+Add sort-search by name, tag, ingredient, etc.
+Add upload to wiki
+Integrate with ASP.NET webapp.
