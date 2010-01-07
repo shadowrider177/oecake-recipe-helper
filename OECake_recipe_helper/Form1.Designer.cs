@@ -54,6 +54,23 @@
             this.txtTags = new System.Windows.Forms.TextBox();
             this.cmdFilter = new System.Windows.Forms.Button();
             this.grpMaterials = new System.Windows.Forms.GroupBox();
+            this.chkWater = new System.Windows.Forms.CheckBox();
+            this.chkWall = new System.Windows.Forms.CheckBox();
+            this.chkViscous = new System.Windows.Forms.CheckBox();
+            this.chkUser = new System.Windows.Forms.CheckBox();
+            this.chkTensile = new System.Windows.Forms.CheckBox();
+            this.chkString = new System.Windows.Forms.CheckBox();
+            this.chkSnow = new System.Windows.Forms.CheckBox();
+            this.chkAxis = new System.Windows.Forms.CheckBox();
+            this.chkRigid = new System.Windows.Forms.CheckBox();
+            this.chkRice = new System.Windows.Forms.CheckBox();
+            this.chkPowder = new System.Windows.Forms.CheckBox();
+            this.chkOutflow = new System.Windows.Forms.CheckBox();
+            this.chkNnull = new System.Windows.Forms.CheckBox();
+            this.chkAnull = new System.Windows.Forms.CheckBox();
+            this.chkMochi = new System.Windows.Forms.CheckBox();
+            this.chkLight = new System.Windows.Forms.CheckBox();
+            this.chkJet = new System.Windows.Forms.CheckBox();
             this.chkInflow = new System.Windows.Forms.CheckBox();
             this.chkHeater = new System.Windows.Forms.CheckBox();
             this.chkGas = new System.Windows.Forms.CheckBox();
@@ -65,25 +82,9 @@
             this.chkBrittle = new System.Windows.Forms.CheckBox();
             this.cmdClearFilter = new System.Windows.Forms.Button();
             this.grpFilter = new System.Windows.Forms.GroupBox();
-            this.chkJet = new System.Windows.Forms.CheckBox();
-            this.chkLight = new System.Windows.Forms.CheckBox();
-            this.chkMochi = new System.Windows.Forms.CheckBox();
-            this.chkAnull = new System.Windows.Forms.CheckBox();
-            this.chkNnull = new System.Windows.Forms.CheckBox();
-            this.chkOutflow = new System.Windows.Forms.CheckBox();
-            this.chkPowder = new System.Windows.Forms.CheckBox();
-            this.chkRice = new System.Windows.Forms.CheckBox();
-            this.chkRigid = new System.Windows.Forms.CheckBox();
-            this.chkAxis = new System.Windows.Forms.CheckBox();
-            this.chkSnow = new System.Windows.Forms.CheckBox();
-            this.chkString = new System.Windows.Forms.CheckBox();
-            this.chkTensile = new System.Windows.Forms.CheckBox();
-            this.chkUser = new System.Windows.Forms.CheckBox();
-            this.chkViscous = new System.Windows.Forms.CheckBox();
-            this.chkWall = new System.Windows.Forms.CheckBox();
-            this.chkWater = new System.Windows.Forms.CheckBox();
-            this.lblFilterTags = new System.Windows.Forms.Label();
             this.txtTagsFilter = new System.Windows.Forms.TextBox();
+            this.lblFilterTags = new System.Windows.Forms.Label();
+            this.cmdToWiki = new System.Windows.Forms.Button();
             this.grpMaterials.SuspendLayout();
             this.grpFilter.SuspendLayout();
             this.SuspendLayout();
@@ -336,6 +337,193 @@
             this.grpMaterials.TabStop = false;
             this.grpMaterials.Text = "Materials";
             // 
+            // chkWater
+            // 
+            this.chkWater.AutoSize = true;
+            this.chkWater.Location = new System.Drawing.Point(691, 42);
+            this.chkWater.Name = "chkWater";
+            this.chkWater.Size = new System.Drawing.Size(55, 17);
+            this.chkWater.TabIndex = 25;
+            this.chkWater.Text = "Water";
+            this.chkWater.UseVisualStyleBackColor = true;
+            this.chkWater.CheckedChanged += new System.EventHandler(this.chkWater_CheckedChanged);
+            // 
+            // chkWall
+            // 
+            this.chkWall.AutoSize = true;
+            this.chkWall.Location = new System.Drawing.Point(635, 42);
+            this.chkWall.Name = "chkWall";
+            this.chkWall.Size = new System.Drawing.Size(47, 17);
+            this.chkWall.TabIndex = 24;
+            this.chkWall.Text = "Wall";
+            this.chkWall.UseVisualStyleBackColor = true;
+            this.chkWall.CheckedChanged += new System.EventHandler(this.chkWall_CheckedChanged);
+            // 
+            // chkViscous
+            // 
+            this.chkViscous.AutoSize = true;
+            this.chkViscous.Location = new System.Drawing.Point(575, 42);
+            this.chkViscous.Name = "chkViscous";
+            this.chkViscous.Size = new System.Drawing.Size(63, 17);
+            this.chkViscous.TabIndex = 23;
+            this.chkViscous.Text = "Viscous";
+            this.chkViscous.UseVisualStyleBackColor = true;
+            this.chkViscous.CheckedChanged += new System.EventHandler(this.chkViscous_CheckedChanged);
+            // 
+            // chkUser
+            // 
+            this.chkUser.AutoSize = true;
+            this.chkUser.Location = new System.Drawing.Point(529, 42);
+            this.chkUser.Name = "chkUser";
+            this.chkUser.Size = new System.Drawing.Size(48, 17);
+            this.chkUser.TabIndex = 22;
+            this.chkUser.Text = "User";
+            this.chkUser.UseVisualStyleBackColor = true;
+            this.chkUser.CheckedChanged += new System.EventHandler(this.chkUser_CheckedChanged);
+            // 
+            // chkTensile
+            // 
+            this.chkTensile.AutoSize = true;
+            this.chkTensile.Location = new System.Drawing.Point(469, 42);
+            this.chkTensile.Name = "chkTensile";
+            this.chkTensile.Size = new System.Drawing.Size(60, 17);
+            this.chkTensile.TabIndex = 21;
+            this.chkTensile.Text = "Tensile";
+            this.chkTensile.UseVisualStyleBackColor = true;
+            this.chkTensile.CheckedChanged += new System.EventHandler(this.chkTensile_CheckedChanged);
+            // 
+            // chkString
+            // 
+            this.chkString.AutoSize = true;
+            this.chkString.Location = new System.Drawing.Point(405, 42);
+            this.chkString.Name = "chkString";
+            this.chkString.Size = new System.Drawing.Size(53, 17);
+            this.chkString.TabIndex = 20;
+            this.chkString.Text = "String";
+            this.chkString.UseVisualStyleBackColor = true;
+            this.chkString.CheckedChanged += new System.EventHandler(this.chkString_CheckedChanged);
+            // 
+            // chkSnow
+            // 
+            this.chkSnow.AutoSize = true;
+            this.chkSnow.Location = new System.Drawing.Point(354, 42);
+            this.chkSnow.Name = "chkSnow";
+            this.chkSnow.Size = new System.Drawing.Size(53, 17);
+            this.chkSnow.TabIndex = 19;
+            this.chkSnow.Text = "Snow";
+            this.chkSnow.UseVisualStyleBackColor = true;
+            this.chkSnow.CheckedChanged += new System.EventHandler(this.chkSnow_CheckedChanged);
+            // 
+            // chkAxis
+            // 
+            this.chkAxis.AutoSize = true;
+            this.chkAxis.Location = new System.Drawing.Point(302, 42);
+            this.chkAxis.Name = "chkAxis";
+            this.chkAxis.Size = new System.Drawing.Size(45, 17);
+            this.chkAxis.TabIndex = 18;
+            this.chkAxis.Text = "Axis";
+            this.chkAxis.UseVisualStyleBackColor = true;
+            this.chkAxis.CheckedChanged += new System.EventHandler(this.chkAxis_CheckedChanged);
+            // 
+            // chkRigid
+            // 
+            this.chkRigid.AutoSize = true;
+            this.chkRigid.Location = new System.Drawing.Point(252, 42);
+            this.chkRigid.Name = "chkRigid";
+            this.chkRigid.Size = new System.Drawing.Size(50, 17);
+            this.chkRigid.TabIndex = 17;
+            this.chkRigid.Text = "Rigid";
+            this.chkRigid.UseVisualStyleBackColor = true;
+            this.chkRigid.CheckedChanged += new System.EventHandler(this.chkRigid_CheckedChanged);
+            // 
+            // chkRice
+            // 
+            this.chkRice.AutoSize = true;
+            this.chkRice.Location = new System.Drawing.Point(189, 42);
+            this.chkRice.Name = "chkRice";
+            this.chkRice.Size = new System.Drawing.Size(48, 17);
+            this.chkRice.TabIndex = 16;
+            this.chkRice.Text = "Rice";
+            this.chkRice.UseVisualStyleBackColor = true;
+            this.chkRice.CheckedChanged += new System.EventHandler(this.chkRice_CheckedChanged);
+            // 
+            // chkPowder
+            // 
+            this.chkPowder.AutoSize = true;
+            this.chkPowder.Location = new System.Drawing.Point(126, 42);
+            this.chkPowder.Name = "chkPowder";
+            this.chkPowder.Size = new System.Drawing.Size(62, 17);
+            this.chkPowder.TabIndex = 15;
+            this.chkPowder.Text = "Powder";
+            this.chkPowder.UseVisualStyleBackColor = true;
+            this.chkPowder.CheckedChanged += new System.EventHandler(this.chkPowder_CheckedChanged);
+            // 
+            // chkOutflow
+            // 
+            this.chkOutflow.AutoSize = true;
+            this.chkOutflow.Location = new System.Drawing.Point(64, 42);
+            this.chkOutflow.Name = "chkOutflow";
+            this.chkOutflow.Size = new System.Drawing.Size(62, 17);
+            this.chkOutflow.TabIndex = 14;
+            this.chkOutflow.Text = "Outflow";
+            this.chkOutflow.UseVisualStyleBackColor = true;
+            this.chkOutflow.CheckedChanged += new System.EventHandler(this.chkOutflow_CheckedChanged);
+            // 
+            // chkNnull
+            // 
+            this.chkNnull.AutoSize = true;
+            this.chkNnull.Location = new System.Drawing.Point(6, 42);
+            this.chkNnull.Name = "chkNnull";
+            this.chkNnull.Size = new System.Drawing.Size(55, 17);
+            this.chkNnull.TabIndex = 13;
+            this.chkNnull.Text = "N-Null";
+            this.chkNnull.UseVisualStyleBackColor = true;
+            this.chkNnull.CheckedChanged += new System.EventHandler(this.chkNnull_CheckedChanged);
+            // 
+            // chkAnull
+            // 
+            this.chkAnull.AutoSize = true;
+            this.chkAnull.Location = new System.Drawing.Point(691, 19);
+            this.chkAnull.Name = "chkAnull";
+            this.chkAnull.Size = new System.Drawing.Size(54, 17);
+            this.chkAnull.TabIndex = 12;
+            this.chkAnull.Text = "A-Null";
+            this.chkAnull.UseVisualStyleBackColor = true;
+            this.chkAnull.CheckedChanged += new System.EventHandler(this.chkAnull_CheckedChanged);
+            // 
+            // chkMochi
+            // 
+            this.chkMochi.AutoSize = true;
+            this.chkMochi.Location = new System.Drawing.Point(630, 19);
+            this.chkMochi.Name = "chkMochi";
+            this.chkMochi.Size = new System.Drawing.Size(55, 17);
+            this.chkMochi.TabIndex = 11;
+            this.chkMochi.Text = "Mochi";
+            this.chkMochi.UseVisualStyleBackColor = true;
+            this.chkMochi.CheckedChanged += new System.EventHandler(this.chkMochi_CheckedChanged);
+            // 
+            // chkLight
+            // 
+            this.chkLight.AutoSize = true;
+            this.chkLight.Location = new System.Drawing.Point(575, 19);
+            this.chkLight.Name = "chkLight";
+            this.chkLight.Size = new System.Drawing.Size(49, 17);
+            this.chkLight.TabIndex = 10;
+            this.chkLight.Text = "Light";
+            this.chkLight.UseVisualStyleBackColor = true;
+            this.chkLight.CheckedChanged += new System.EventHandler(this.chkLight_CheckedChanged);
+            // 
+            // chkJet
+            // 
+            this.chkJet.AutoSize = true;
+            this.chkJet.Location = new System.Drawing.Point(529, 19);
+            this.chkJet.Name = "chkJet";
+            this.chkJet.Size = new System.Drawing.Size(40, 17);
+            this.chkJet.TabIndex = 9;
+            this.chkJet.Text = "Jet";
+            this.chkJet.UseVisualStyleBackColor = true;
+            this.chkJet.CheckedChanged += new System.EventHandler(this.chkJet_CheckedChanged);
+            // 
             // chkInflow
             // 
             this.chkInflow.AutoSize = true;
@@ -457,192 +645,12 @@
             this.grpFilter.TabStop = false;
             this.grpFilter.Text = "Filter by:";
             // 
-            // chkJet
+            // txtTagsFilter
             // 
-            this.chkJet.AutoSize = true;
-            this.chkJet.Location = new System.Drawing.Point(529, 19);
-            this.chkJet.Name = "chkJet";
-            this.chkJet.Size = new System.Drawing.Size(40, 17);
-            this.chkJet.TabIndex = 9;
-            this.chkJet.Text = "Jet";
-            this.chkJet.UseVisualStyleBackColor = true;
-            this.chkJet.CheckedChanged += new System.EventHandler(this.chkJet_CheckedChanged);
-            // 
-            // chkLight
-            // 
-            this.chkLight.AutoSize = true;
-            this.chkLight.Location = new System.Drawing.Point(575, 19);
-            this.chkLight.Name = "chkLight";
-            this.chkLight.Size = new System.Drawing.Size(49, 17);
-            this.chkLight.TabIndex = 10;
-            this.chkLight.Text = "Light";
-            this.chkLight.UseVisualStyleBackColor = true;
-            this.chkLight.CheckedChanged += new System.EventHandler(this.chkLight_CheckedChanged);
-            // 
-            // chkMochi
-            // 
-            this.chkMochi.AutoSize = true;
-            this.chkMochi.Location = new System.Drawing.Point(630, 19);
-            this.chkMochi.Name = "chkMochi";
-            this.chkMochi.Size = new System.Drawing.Size(55, 17);
-            this.chkMochi.TabIndex = 11;
-            this.chkMochi.Text = "Mochi";
-            this.chkMochi.UseVisualStyleBackColor = true;
-            this.chkMochi.CheckedChanged += new System.EventHandler(this.chkMochi_CheckedChanged);
-            // 
-            // chkAnull
-            // 
-            this.chkAnull.AutoSize = true;
-            this.chkAnull.Location = new System.Drawing.Point(691, 19);
-            this.chkAnull.Name = "chkAnull";
-            this.chkAnull.Size = new System.Drawing.Size(54, 17);
-            this.chkAnull.TabIndex = 12;
-            this.chkAnull.Text = "A-Null";
-            this.chkAnull.UseVisualStyleBackColor = true;
-            this.chkAnull.CheckedChanged += new System.EventHandler(this.chkAnull_CheckedChanged);
-            // 
-            // chkNnull
-            // 
-            this.chkNnull.AutoSize = true;
-            this.chkNnull.Location = new System.Drawing.Point(6, 42);
-            this.chkNnull.Name = "chkNnull";
-            this.chkNnull.Size = new System.Drawing.Size(55, 17);
-            this.chkNnull.TabIndex = 13;
-            this.chkNnull.Text = "N-Null";
-            this.chkNnull.UseVisualStyleBackColor = true;
-            this.chkNnull.CheckedChanged += new System.EventHandler(this.chkNnull_CheckedChanged);
-            // 
-            // chkOutflow
-            // 
-            this.chkOutflow.AutoSize = true;
-            this.chkOutflow.Location = new System.Drawing.Point(64, 42);
-            this.chkOutflow.Name = "chkOutflow";
-            this.chkOutflow.Size = new System.Drawing.Size(62, 17);
-            this.chkOutflow.TabIndex = 14;
-            this.chkOutflow.Text = "Outflow";
-            this.chkOutflow.UseVisualStyleBackColor = true;
-            this.chkOutflow.CheckedChanged += new System.EventHandler(this.chkOutflow_CheckedChanged);
-            // 
-            // chkPowder
-            // 
-            this.chkPowder.AutoSize = true;
-            this.chkPowder.Location = new System.Drawing.Point(126, 42);
-            this.chkPowder.Name = "chkPowder";
-            this.chkPowder.Size = new System.Drawing.Size(62, 17);
-            this.chkPowder.TabIndex = 15;
-            this.chkPowder.Text = "Powder";
-            this.chkPowder.UseVisualStyleBackColor = true;
-            this.chkPowder.CheckedChanged += new System.EventHandler(this.chkPowder_CheckedChanged);
-            // 
-            // chkRice
-            // 
-            this.chkRice.AutoSize = true;
-            this.chkRice.Location = new System.Drawing.Point(189, 42);
-            this.chkRice.Name = "chkRice";
-            this.chkRice.Size = new System.Drawing.Size(48, 17);
-            this.chkRice.TabIndex = 16;
-            this.chkRice.Text = "Rice";
-            this.chkRice.UseVisualStyleBackColor = true;
-            this.chkRice.CheckedChanged += new System.EventHandler(this.chkRice_CheckedChanged);
-            // 
-            // chkRigid
-            // 
-            this.chkRigid.AutoSize = true;
-            this.chkRigid.Location = new System.Drawing.Point(252, 42);
-            this.chkRigid.Name = "chkRigid";
-            this.chkRigid.Size = new System.Drawing.Size(50, 17);
-            this.chkRigid.TabIndex = 17;
-            this.chkRigid.Text = "Rigid";
-            this.chkRigid.UseVisualStyleBackColor = true;
-            this.chkRigid.CheckedChanged += new System.EventHandler(this.chkRigid_CheckedChanged);
-            // 
-            // chkAxis
-            // 
-            this.chkAxis.AutoSize = true;
-            this.chkAxis.Location = new System.Drawing.Point(302, 42);
-            this.chkAxis.Name = "chkAxis";
-            this.chkAxis.Size = new System.Drawing.Size(45, 17);
-            this.chkAxis.TabIndex = 18;
-            this.chkAxis.Text = "Axis";
-            this.chkAxis.UseVisualStyleBackColor = true;
-            this.chkAxis.CheckedChanged += new System.EventHandler(this.chkAxis_CheckedChanged);
-            // 
-            // chkSnow
-            // 
-            this.chkSnow.AutoSize = true;
-            this.chkSnow.Location = new System.Drawing.Point(354, 42);
-            this.chkSnow.Name = "chkSnow";
-            this.chkSnow.Size = new System.Drawing.Size(53, 17);
-            this.chkSnow.TabIndex = 19;
-            this.chkSnow.Text = "Snow";
-            this.chkSnow.UseVisualStyleBackColor = true;
-            this.chkSnow.CheckedChanged += new System.EventHandler(this.chkSnow_CheckedChanged);
-            // 
-            // chkString
-            // 
-            this.chkString.AutoSize = true;
-            this.chkString.Location = new System.Drawing.Point(405, 42);
-            this.chkString.Name = "chkString";
-            this.chkString.Size = new System.Drawing.Size(53, 17);
-            this.chkString.TabIndex = 20;
-            this.chkString.Text = "String";
-            this.chkString.UseVisualStyleBackColor = true;
-            this.chkString.CheckedChanged += new System.EventHandler(this.chkString_CheckedChanged);
-            // 
-            // chkTensile
-            // 
-            this.chkTensile.AutoSize = true;
-            this.chkTensile.Location = new System.Drawing.Point(469, 42);
-            this.chkTensile.Name = "chkTensile";
-            this.chkTensile.Size = new System.Drawing.Size(60, 17);
-            this.chkTensile.TabIndex = 21;
-            this.chkTensile.Text = "Tensile";
-            this.chkTensile.UseVisualStyleBackColor = true;
-            this.chkTensile.CheckedChanged += new System.EventHandler(this.chkTensile_CheckedChanged);
-            // 
-            // chkUser
-            // 
-            this.chkUser.AutoSize = true;
-            this.chkUser.Location = new System.Drawing.Point(529, 42);
-            this.chkUser.Name = "chkUser";
-            this.chkUser.Size = new System.Drawing.Size(48, 17);
-            this.chkUser.TabIndex = 22;
-            this.chkUser.Text = "User";
-            this.chkUser.UseVisualStyleBackColor = true;
-            this.chkUser.CheckedChanged += new System.EventHandler(this.chkUser_CheckedChanged);
-            // 
-            // chkViscous
-            // 
-            this.chkViscous.AutoSize = true;
-            this.chkViscous.Location = new System.Drawing.Point(575, 42);
-            this.chkViscous.Name = "chkViscous";
-            this.chkViscous.Size = new System.Drawing.Size(63, 17);
-            this.chkViscous.TabIndex = 23;
-            this.chkViscous.Text = "Viscous";
-            this.chkViscous.UseVisualStyleBackColor = true;
-            this.chkViscous.CheckedChanged += new System.EventHandler(this.chkViscous_CheckedChanged);
-            // 
-            // chkWall
-            // 
-            this.chkWall.AutoSize = true;
-            this.chkWall.Location = new System.Drawing.Point(635, 42);
-            this.chkWall.Name = "chkWall";
-            this.chkWall.Size = new System.Drawing.Size(47, 17);
-            this.chkWall.TabIndex = 24;
-            this.chkWall.Text = "Wall";
-            this.chkWall.UseVisualStyleBackColor = true;
-            this.chkWall.CheckedChanged += new System.EventHandler(this.chkWall_CheckedChanged);
-            // 
-            // chkWater
-            // 
-            this.chkWater.AutoSize = true;
-            this.chkWater.Location = new System.Drawing.Point(691, 42);
-            this.chkWater.Name = "chkWater";
-            this.chkWater.Size = new System.Drawing.Size(55, 17);
-            this.chkWater.TabIndex = 25;
-            this.chkWater.Text = "Water";
-            this.chkWater.UseVisualStyleBackColor = true;
-            this.chkWater.CheckedChanged += new System.EventHandler(this.chkWater_CheckedChanged);
+            this.txtTagsFilter.Location = new System.Drawing.Point(46, 91);
+            this.txtTagsFilter.Name = "txtTagsFilter";
+            this.txtTagsFilter.Size = new System.Drawing.Size(241, 20);
+            this.txtTagsFilter.TabIndex = 23;
             // 
             // lblFilterTags
             // 
@@ -653,18 +661,22 @@
             this.lblFilterTags.TabIndex = 22;
             this.lblFilterTags.Text = "Tags:";
             // 
-            // txtTagsFilter
+            // cmdToWiki
             // 
-            this.txtTagsFilter.Location = new System.Drawing.Point(46, 91);
-            this.txtTagsFilter.Name = "txtTagsFilter";
-            this.txtTagsFilter.Size = new System.Drawing.Size(241, 20);
-            this.txtTagsFilter.TabIndex = 23;
+            this.cmdToWiki.Location = new System.Drawing.Point(628, 10);
+            this.cmdToWiki.Name = "cmdToWiki";
+            this.cmdToWiki.Size = new System.Drawing.Size(75, 23);
+            this.cmdToWiki.TabIndex = 24;
+            this.cmdToWiki.Text = "Send to wiki";
+            this.cmdToWiki.UseVisualStyleBackColor = true;
+            this.cmdToWiki.Click += new System.EventHandler(this.cmdToWiki_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 539);
+            this.Controls.Add(this.cmdToWiki);
             this.Controls.Add(this.grpFilter);
             this.Controls.Add(this.cmdClearFilter);
             this.Controls.Add(this.cmdFilter);
@@ -755,6 +767,7 @@
         private System.Windows.Forms.CheckBox chkJet;
         private System.Windows.Forms.TextBox txtTagsFilter;
         private System.Windows.Forms.Label lblFilterTags;
+        private System.Windows.Forms.Button cmdToWiki;
     }
 }
 

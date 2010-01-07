@@ -41,7 +41,7 @@ namespace OECake_recipe_helper
 
         const uint WM_KEYDOWN = 0x100;
 
-        string version = "2";
+        string version = "3b"; //Naked number = final, main release, {X}d = development, {X}b = beta, {X}l = legacy
 
         Site site = null;
 
@@ -170,7 +170,7 @@ namespace OECake_recipe_helper
             {
                 lstProperties.Items.Add("Cool heat effect: material will condense steam, ignite fuel & melt elastic but won't evaporate water");
             }
-            if (contents.Contains('p') && contents.Contains('h'))
+            if (contents.Contains('p') && (contents.Contains('h') || contents.Contains('@')))
             {
                 lstProperties.Items.Add("Material will 'explode' or dissipate instantly");
             }
@@ -181,6 +181,10 @@ namespace OECake_recipe_helper
             if (contents.Contains('n') && contents.Contains('a'))
             {
                 lstProperties.Items.Add("Material will contain both null varieties ('a' does not cancel 'n' and vice versa)");
+            }
+            if (contents.Contains('i') && contents.Contains('m') && !(contents.Contains('p') && (contents.Contains('h') || contents.Contains('@'))))
+            {
+                lstProperties.Items.Add("Material will self-replicate in large quantities on impact.");
             }
             if (contents.Contains('r') && contents.Contains('t') && contents.Contains('f') && contents.Contains('h') && contents.Contains('g'))
             {
@@ -263,7 +267,7 @@ namespace OECake_recipe_helper
             Page pgeRecipes = new Page(site, "Recipes");
             pgeRecipes.Load();
             string wikirecipes = pgeRecipes.text;
-            MatchCollection recipes = Regex.Matches(wikirecipes, @"\{\{Recipe\|([^|}]*?)\|([^|}]*?)\}\}");
+            MatchCollection recipes = Regex.Matches(wikirecipes, @"\{\{[\s]?Recipe[\s]?\|[\s]?([^|}]*?)[\s]?\|[\s]?([^|}]*?)[\s]?\}\}");
             ListViewItem fromwiki = null;
             string[] items; //Out of the loop to avoid recreating it each iteration.
             foreach (Match m in recipes)
@@ -293,7 +297,7 @@ namespace OECake_recipe_helper
 
         private void opfData_FileOk(object sender, CancelEventArgs e)
         {
-            //Saves data to opf file
+            //Reads data from selected file and shoves it in the listview
             StreamReader sr = new StreamReader(opfData.FileName);
             string read = sr.ReadLine();
             string[] linesplit;
@@ -312,7 +316,7 @@ namespace OECake_recipe_helper
 
         private void svfData_FileOk(object sender, CancelEventArgs e)
         {
-            //Loads from specified file
+            //Saves data to oeh file
             StreamWriter sw = new StreamWriter(svfData.FileName);
             foreach (ListViewItem i in lvwRecipes.Items)
             {
@@ -702,6 +706,15 @@ namespace OECake_recipe_helper
         {
             //Again, just in case it's needed
             if (e.Column == 0) { lvwRecipes.Sort(); }
+        }
+
+        private void cmdToWiki_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtCondensed.Text))
+            {
+                frmToWiki wikiform = new frmToWiki(txtRecipe.Text, txtCondensed.Text, txtComment.Text);
+                wikiform.Show();
+            }
         }
 
     }
