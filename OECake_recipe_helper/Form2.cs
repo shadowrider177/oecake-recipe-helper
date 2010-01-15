@@ -33,7 +33,7 @@ namespace OECake_recipe_helper
 
         private void cmdSend_Click(object sender, EventArgs e)
         {
-            Site site = new Site("http://oecake.wikia.com/", "<<username>>", "<<password redacted from SVN, use own username/pwd combo to test feature>>");
+            Site site = new Site("http://oecake.wikia.com/", "OECake Recipe Helper", "QmAz8{o)p87£*6^5tgGRvi");
             Page recipepage = new Page(site, "Recipes");
             recipepage.Load();
             pagetext = recipepage.text;
