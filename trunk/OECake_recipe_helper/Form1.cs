@@ -41,7 +41,7 @@ namespace OECake_recipe_helper
 
         const uint WM_KEYDOWN = 0x100;
 
-        string version = "3b"; //Naked number = final, main release, {X}d = development, {X}b = beta, {X}l = legacy
+        string version = "3"; //Naked number = final, main release, {X}d = development, {X}b = beta, {X}l = legacy
 
         Site site = null;
 

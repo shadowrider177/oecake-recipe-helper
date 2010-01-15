@@ -68,14 +68,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OECake_recipe_helper.exe" size="36352">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OECake_recipe_helper.exe" size="30720">
       <assemblyIdentity name="OECake_recipe_helper" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Dj//LOWoQAMy9Bw8n1NNNSXg/4o=</dsig:DigestValue>
+        <dsig:DigestValue>XPJRf6kvSZCZSx0gzg9nux0Rv0M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

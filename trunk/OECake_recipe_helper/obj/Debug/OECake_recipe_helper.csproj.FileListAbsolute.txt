@@ -15,6 +15,7 @@ C:\Users\Admin\Documents\Visual Studio 2008\Projects\OECake_recipe_helper\OECake
 C:\Users\Admin\Documents\Visual Studio 2008\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\OECake_recipe_helper.application
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\OECake_recipe_helper.frmMain.resources
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\OECake_recipe_helper.frmToWiki.resources
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\OECake_recipe_helper.Properties.Resources.resources
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\ResGen.read.1.tlog
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\ResGen.write.1.tlog
@@ -22,10 +23,10 @@ C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\bin\Debug\OECake_recipe_helper.application
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\bin\Debug\OECake_recipe_helper.exe
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\bin\Debug\OECake_recipe_helper.pdb
+C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\bin\Debug\DotNetWikiBot.dll
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\bin\Debug\BotInfo.netmodule
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\OECake_recipe_helper.TrustInfo.xml
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\OECake_recipe_helper.exe.manifest
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\OECake_recipe_helper.application
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\OECake_recipe_helper.exe
 C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\OECake_recipe_helper.pdb
-C:\Users\Admin\Documents\Visual Studio 2010\Projects\OECake_recipe_helper\OECake_recipe_helper\obj\Debug\OECake_recipe_helper.frmToWiki.resources
