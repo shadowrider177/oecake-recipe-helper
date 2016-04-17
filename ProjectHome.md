@@ -1,0 +1,1 @@
+Allows you to manage, analyze and test OE-Cake recipes without any fuss. Connects to http://oecake.wikia.com and their recipe list. Uses the 'DotNetWikiBot' MediaWiki library for wiki functions.
